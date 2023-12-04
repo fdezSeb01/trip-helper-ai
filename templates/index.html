@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TripHelper.Ai</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</head>
+<body>
+      <h1>TripHelper.Ai</h1>
+    <h2>What do you want to do?</h2>
+
+    <form>
+        <input type="text" id="textInput" name="textInput" placeholder="A city with plenty of nightlife and a seaside...">
+        <button type="button" onclick="submitForm()">Where to...</button>
+    </form>
+</body>
+</html>

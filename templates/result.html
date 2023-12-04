@@ -1,0 +1,63 @@
+<!-- result.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Glagolitic:wght@400;700&display=swap">
+    <style>
+        #reasonParagraph {
+            font-family: 'Noto Sans Glagolitic', sans-serif;
+        }
+    </style>
+    <title>Travel Recommendation</title>
+    <script src="{{ url_for('static', filename='result.js') }}"></script>
+</head>
+<body>
+  <h2>You Should Go To...</h2>
+
+  <div id="imageCarousel" class="carousel">
+
+  <input type="radio" name="position" checked />
+  <input type="radio" name="position" />
+  <input type="radio" name="position" />
+  <input type="radio" name="position" />
+  <input type="radio" name="position" />
+  <main id="carousel">
+  <div class="item">
+          <img src="" alt="Image 1">
+          <label></label>
+        </div>
+        <div class="item">
+          <img src="" alt="Image 2">
+          <label></label>
+        </div>
+        <div class="item">
+          <img src="" alt="Image 3">
+          <label></label>
+        </div>
+        <div class="item">
+          <img src="" alt="Image 4">
+          <label></label>
+        </div>
+        <div class="item">
+          <img src="" alt="Image 5">
+          <label></label>
+        </div>
+      </main>
+            <!-- Add arrow buttons -->
+      <!-- <div class="arrow" id="leftArrow">&#9665;</div>
+      <div class="arrow" id="rightArrow">&#9655;</div> -->
+  </div>
+  <div class="borderedDiv">
+    <p id="reasonParagraph" style="font-family: 'Noto Sans Glagolitic', sans-serif;"></p>
+  </div>
+      <button onclick="goToKayak()">Buy Now</button>
+    <script>
+        var citiesData = {{ cities | tojson | safe }};
+        handleCitiesData(citiesData);
+    </script>
+</body>
+</html>

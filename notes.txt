@@ -1,0 +1,15 @@
+Flight search kayak: mex-madrid, 6-8 days +- un mes
+https://www.kayak.com.mx/flights/MEX-MAD/2024-01-01/2024-01-31-flexible-calendar-6to8?sort=bestflight_a
+
+https://www.kayak.com.mx/flights/MEX-RAK/2024-01-01/2024-01-31-flexible-calendar-6to8?sort=bestflight_a
+
+open ai API
+https://platform.openai.com/docs/api-reference 
+
+Falta
+probar modelo DNN
+
+
+DNN 4 10 example length
+DNN 5 15 example length
+DNN_model_best_2 100 length
