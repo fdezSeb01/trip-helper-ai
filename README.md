@@ -1,5 +1,5 @@
 # travel-picker-ai
-AI web application for travel destination recommendations given an inputon what a user wants to do or what kinda places they like using an NLP model with a DNN.
+AI web application for travel destination recommendations given an input on what a user wants to do or what kinda places they like using an NLP model with a DNN.
 ### Screenshots
 
 
